@@ -1,1 +1,7 @@
 # digital_core
+
+This project is aimed to estimate rock properties via its digital twin. Nowadays the measurments of absolute permeability, relative permeability and saturation are conducted in specific labs. This observations are time-consuming and can cost a lot of money. With digital transformation to be evolved, new tools for rock properties estimation have occurred. For example, tomography is widely used in oil and gas geology that can help evaluate rock properties without any lab experiments. The core sample is to the device, the result is a cube with white segments as mineral part of core whereas black ones are pores. The cube then undergoes specific simulations, and the final result is its properties.
+
+This is when Machine Learning tools come into play. We then take the features such as connected porosity, staticstics of local and mercury porosity measurments and area volume as an input features and use them to predict targets - absolute permeability, formation factor, residual oil saturation and relative permeability. The latter can be approximated by Brooks-Corey model, thus our target variables are the parameters of this model - a, b, coefficients, max relative water permeability and residual oil saturation.
+
+The results can be considered as promising. MAPE shows good results for formation factor and residual oil saturation (less than 20%), for the rest of targets MAPE doesnt exceed 40%.
